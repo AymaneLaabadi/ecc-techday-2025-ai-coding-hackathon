@@ -214,40 +214,77 @@ def update_learning_stats(winner=None):
 
 
 def ai_player_learning(state, time_limit=1.0, max_simulations=1000):
-    """Enhanced AI player function with adaptive parameters and move validation"""
+    """Enhanced AI player function with faster first move performance"""
     global global_mcts, learning_stats
 
-    # Adjust parameters based on game progress
-    # Early game: More exploration
-    # Late game: More exploitation
-    exploration_weight = 1.4
+    # Detect if this is the first move (don't rely on loading/saving that could block)
+    is_first_move = False
+    if state.current_player == 2:  # If AI is playing
+        # Count pieces to check if we're at or near the starting position
+        piece_count = 0
+        for r in range(state.rows):
+            for c in range(state.cols):
+                if state.board[r, c, 0] > 0:
+                    piece_count += 1
+        # In starting position, we should have close to the full set of pieces
+        is_first_move = (piece_count >= 26)
 
-    # Count pieces to estimate game phase
-    piece_count = 0
-    for r in range(state.rows):
-        for c in range(state.cols):
-            if state.board[r, c, 0] > 0:  # If there's a piece
-                piece_count += 1
+    # Use optimized parameters for the first move to make it almost instant
+    if is_first_move:
+        print("First AI move detected - using fast parameters")
 
-    # Adjust exploration weight based on game phase
-    if piece_count < 10:  # Late game, fewer pieces
-        exploration_weight = 1.0  # Less exploration, more exploitation
-        max_simulations = int(max_simulations * 1.5)  # More thinking time
+        # Define some guaranteed good first moves
+        fast_first_moves = [
+            Action(1, (3, 2)),  # Rotate deflector at 3,2 clockwise
+            Action(1, (4, 4)),  # Rotate switch at 4,4 clockwise
+            Action(0, (7, 3), (6, 3)),  # Move obelisk forward to protect
+            Action(0, (7, 5), (6, 5)),  # Move obelisk forward to protect
+            Action(0, (7, 2), (6, 2)),  # Move deflector forward
+        ]
 
+        # Try each move until we find a valid one
+        for move in fast_first_moves:
+            new_state = state.apply_action(move)
+            # Check if move is valid (changes player or ends game)
+            if new_state.current_player != state.current_player or new_state.game_over:
+                print(f"Using predefined first move: {move}")
+
+                # Update the MCTS tree for this move (if it exists)
+                if global_mcts and hasattr(global_mcts, 'update_after_move'):
+                    try:
+                        global_mcts.update_after_move(move)
+                    except Exception as e:
+                        print(f"Error updating tree (non-critical): {e}")
+
+                # Update stats
+                learning_stats['moves_made'] += 1
+                return move
+
+        # If we're here, none of our predefined moves worked
+        # Use extremely limited MCTS for speed
+        max_simulations = min(max_simulations, 100)
+        time_limit = min(time_limit, 0.3)
+
+    # Use regular parameters for non-first moves
     adapter = LaserChessAdapter(state)
 
+    # Ensure MCTS tree is loaded/initialized
     if global_mcts is None:
-        load_tree()
-        if global_mcts is None:
-            global_mcts = PersistentMCTS(exploration_weight=exploration_weight, time_limit=time_limit)
+        if not load_tree():
+            # Create new tree with current parameters
+            global_mcts = PersistentMCTS(exploration_weight=1.4, time_limit=time_limit)
             global_mcts.initialize_with_state(adapter)
-            # Add opening book moves to new tree
-            add_book_moves()
     else:
-        # Update the exploration weight
-        global_mcts.exploration_weight = exploration_weight
+        # Update root for current state
+        global_mcts.exploration_weight = 1.4
         global_mcts.time_limit = time_limit
-        global_mcts.update_root_for_state(adapter)
+        try:
+            global_mcts.update_root_for_state(adapter)
+        except Exception as e:
+            print(f"Error updating root: {e}")
+            # If update fails, create a new tree
+            global_mcts = PersistentMCTS(exploration_weight=1.4, time_limit=time_limit)
+            global_mcts.initialize_with_state(adapter)
 
     # Get valid actions from the game state directly
     valid_actions = state.get_valid_actions()
@@ -255,55 +292,42 @@ def ai_player_learning(state, time_limit=1.0, max_simulations=1000):
         print("[ERROR] No valid actions available from the game state")
         return None
 
-    # Attempt to find a valid move with multiple attempts
-    for _ in range(10):  # Try up to 10 times to find a valid move
+    # Run MCTS search with appropriate parameters
+    action = None
+    try:
         action = global_mcts.search(max_simulations=max_simulations)
+    except Exception as e:
+        print(f"Error in MCTS search: {e}")
 
-        # If our search returned None, pick a random valid action
-        if action is None:
-            action = random.choice(valid_actions)
-            print("[WARNING] MCTS returned None, selecting random valid action")
+    # If search failed, use random action
+    if action is None:
+        print("[WARNING] MCTS returned None, selecting random valid action")
+        action = random.choice(valid_actions)
 
-        # Validate the move by actually applying it
-        new_state = state.apply_action(action)
+    # Validate the selected action
+    new_state = state.apply_action(action)
+    if new_state.current_player != state.current_player and not new_state.game_over:
+        print(f"[Warning] AI chose invalid move: {action}. Using random fallback.")
+        # Try a random move instead
+        fallback_actions = [a for a in valid_actions if a != action]
+        if fallback_actions:
+            action = random.choice(fallback_actions)
+            new_state = state.apply_action(action)
 
-        if new_state.current_player != state.current_player or new_state.game_over:
-            # Valid move found
+    # Update MCTS tree for the chosen action
+    if hasattr(global_mcts, 'update_after_move'):
+        try:
             global_mcts.update_after_move(action)
+        except Exception as e:
+            print(f"Error updating tree after move: {e}")
 
-            # Update learning stats
-            learning_stats['moves_made'] += 1
+    # Update stats
+    learning_stats['moves_made'] += 1
 
-            # Auto-save every 50 moves as a safeguard
-            if learning_stats['moves_made'] % 50 == 0:
-                save_tree()
+    # Don't auto-save during gameplay - this can cause freezing
+    # We'll save only at game end in main.py
 
-            return action
-        else:
-            print(f"[Warning] AI chose a no-op: {action}. Retrying...")
-            # Avoid this path in the future
-            global_mcts.penalize_invalid_move(action)
-
-            # If the action was in our valid_actions but didn't work, remove it
-            if action in valid_actions:
-                valid_actions.remove(action)
-                print(f"Removed invalid action from valid_actions list")
-
-            # If we have no more valid actions, break
-            if not valid_actions:
-                print("[ERROR] No valid actions remaining after filtering")
-                break
-
-    # If we get here, we failed to find a valid move after multiple attempts
-    # Fall back to a random valid move from the game state
-    if valid_actions:
-        fallback_action = random.choice(valid_actions)
-        print(f"[ERROR] AI failed to find a valid move. Using random fallback: {fallback_action}")
-        global_mcts.update_after_move(fallback_action)
-        return fallback_action
-    else:
-        print("[CRITICAL ERROR] No valid moves available. Game state may be corrupted.")
-        return action  # Return last attempted action as a last resort
+    return action
 
 
 def reset_ai(clear_files=False):

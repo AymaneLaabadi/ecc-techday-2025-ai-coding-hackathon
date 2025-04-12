@@ -133,7 +133,7 @@ class GameState:
         self.board[4, 2] = [3, 2, 0]  # Blue Deflector at 4,2 (/M)
         self.board[4, 4] = [4, 2, 0]  # Blue Switch at 4,4 (/)
         self.board[4, 5] = [4, 2, 1]  # Blue Switch at 4,5 (\)
-        self.board[4, 9] = [3, 2, 0]  # Blue Deflector at 4,9 (/M)
+        self.board[4, 9] = [3, 2, 3]  # Blue Deflector at 4,9 (\M)
 
     def copy(self):
         """Create a deep copy of the current game state"""

@@ -1,0 +1,142 @@
+{
+  "version": 1.0,
+  "strategies": {
+    "defensive_setup": [
+      {
+        "action_type": 0,
+        "piece_pos": [
+          7,
+          3
+        ],
+        "target_pos": [
+          6,
+          3
+        ],
+        "description": "Move obelisk forward to protect"
+      },
+      {
+        "action_type": 0,
+        "piece_pos": [
+          7,
+          5
+        ],
+        "target_pos": [
+          6,
+          5
+        ],
+        "description": "Move obelisk forward to protect"
+      },
+      {
+        "action_type": 1,
+        "piece_pos": [
+          4,
+          4
+        ],
+        "description": "Rotate switch clockwise"
+      }
+    ],
+    "aggressive_center": [
+      {
+        "action_type": 0,
+        "piece_pos": [
+          6,
+          7
+        ],
+        "target_pos": [
+          5,
+          6
+        ],
+        "description": "Move deflector to center"
+      },
+      {
+        "action_type": 1,
+        "piece_pos": [
+          4,
+          5
+        ],
+        "description": "Rotate switch clockwise"
+      },
+      {
+        "action_type": 1,
+        "piece_pos": [
+          3,
+          2
+        ],
+        "description": "Rotate deflector clockwise"
+      }
+    ],
+    "kingside_attack": [
+      {
+        "action_type": 1,
+        "piece_pos": [
+          4,
+          9
+        ],
+        "description": "Rotate deflector clockwise"
+      },
+      {
+        "action_type": 0,
+        "piece_pos": [
+          7,
+          2
+        ],
+        "target_pos": [
+          6,
+          3
+        ],
+        "description": "Move deflector diagonally"
+      },
+      {
+        "action_type": 1,
+        "piece_pos": [
+          3,
+          9
+        ],
+        "description": "Rotate deflector clockwise"
+      }
+    ],
+    "queenside_defense": [
+      {
+        "action_type": 0,
+        "piece_pos": [
+          7,
+          3
+        ],
+        "target_pos": [
+          6,
+          2
+        ],
+        "description": "Move obelisk diagonally"
+      },
+      {
+        "action_type": 0,
+        "piece_pos": [
+          4,
+          2
+        ],
+        "target_pos": [
+          3,
+          3
+        ],
+        "description": "Move deflector diagonally"
+      },
+      {
+        "action_type": 1,
+        "piece_pos": [
+          7,
+          2
+        ],
+        "description": "Rotate deflector clockwise"
+      }
+    ]
+  },
+  "weights": {
+    "defensive_setup": 0.3,
+    "aggressive_center": 0.3,
+    "kingside_attack": 0.2,
+    "queenside_defense": 0.2
+  },
+  "game_history": {},
+  "position_responses": {},
+  "current_strategy": "queenside_defense"
+}

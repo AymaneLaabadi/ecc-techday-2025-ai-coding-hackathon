@@ -6,6 +6,11 @@ import math
 from game_state import GameState, Action, PieceType, Player, Orientation, ActionType
 from ai_player_learning import ai_player_learning
 
+import threading
+import time
+from ai_player_learning import global_mcts, load_tree, PersistentMCTS, LaserChessAdapter
+
+
 # Initialize pygame
 pygame.init()
 
@@ -475,10 +480,93 @@ from game_state import GameState, Action
 from ai_player_learning import ai_player_learning  # <-- Import your AI function
 
 
-# ... (the rest of your imports, constants, and draw functions go here) ...
+def preload_ai_in_background():
+    """Preload the AI in a background thread before the game starts"""
+    global global_mcts
+    print("Preloading AI model in background thread...")
+    load_tree()
+    if global_mcts is None:
+        # Create a minimal state to initialize the tree
+        state = GameState()
+        adapter = LaserChessAdapter(state)
+        global_mcts = PersistentMCTS(exploration_weight=1.4, time_limit=1.0)
+        global_mcts.initialize_with_state(adapter)
+    print("AI model preloaded successfully!")
+
+
+def show_loading_screen():
+    """Display a loading screen while AI is being initialized"""
+    screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+    pygame.display.set_caption("Laser Chess - Loading...")
+
+    font = pygame.font.SysFont("Arial", 24)
+    title_font = pygame.font.SysFont("Arial", 36, bold=True)
+
+    loading_text = title_font.render("Laser Chess", True, BLACK)
+    subtitle_text = font.render("Loading AI model...", True, DARK_GRAY)
+
+    clock = pygame.time.Clock()
+
+    # Simple animation variables
+    dots = 0
+    frame = 0
+
+    # Keep showing loading screen until AI is ready
+    while global_mcts is None:
+        screen.fill(WHITE)
+
+        # Draw title
+        screen.blit(loading_text, (SCREEN_WIDTH // 2 - loading_text.get_width() // 2,
+                                   SCREEN_HEIGHT // 2 - 100))
+
+        # Animated loading text
+        if frame % 15 == 0:  # Update every 15 frames
+            dots = (dots + 1) % 4
+
+        loading_status = "Loading AI" + "." * dots
+        status_text = font.render(loading_status, True, BLUE)
+        screen.blit(status_text, (SCREEN_WIDTH // 2 - status_text.get_width() // 2,
+                                  SCREEN_HEIGHT // 2))
+
+        # Draw hint
+        hint_text = small_font.render("AI is being loaded in the background. Please wait...", True, DARK_GRAY)
+        screen.blit(hint_text, (SCREEN_WIDTH // 2 - hint_text.get_width() // 2,
+                                SCREEN_HEIGHT // 2 + 100))
+
+        pygame.display.flip()
+
+        # Process events so the window doesn't freeze
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                sys.exit()
+
+        frame += 1
+        clock.tick(30)
+
 
 def main():
     pygame.init()
+
+    # Start preloading AI in a background thread
+    loading_thread = threading.Thread(target=preload_ai_in_background)
+    loading_thread.daemon = True
+    loading_thread.start()
+
+    # Show loading screen until AI is ready
+    show_loading_screen()
+
+    # Now continue with the regular game setup
+    screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+    pygame.display.set_caption("Laser Chess")
+
+    state = GameState()
+    running = True
+    selected_pos = None
+    message = "Welcome to Laser Chess! Click a piece to begin."
+    board_x, board_y = 0, 0
+
+
     screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
     pygame.display.set_caption("Laser Chess")
 
@@ -513,9 +601,22 @@ def main():
 
         draw_game_info(state, message)
 
+        # Inside main.py where it handles game over state:
         if state.game_over:
             draw_game_over(state)
-            save_tree()
+
+            # Only save at the end of the game to avoid freezing during gameplay
+            from ai_player_learning import save_tree, update_learning_stats
+
+            # Update stats and save tree in a background thread to avoid freezing
+            def save_game_data():
+                update_learning_stats(state.winner)
+                save_tree()
+
+            # Run the save operation in a background thread
+            save_thread = threading.Thread(target=save_game_data)
+            save_thread.daemon = True
+            save_thread.start()
 
         pygame.display.flip()
 
