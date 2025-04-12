@@ -1,0 +1,77 @@
+{
+  "start_time": "2025-04-12T02:22:44.752616",
+  "num_games": 10,
+  "base_time_limit": 0.5,
+  "games": [
+    {
+      "game_number": 1,
+      "error": "maximum recursion depth exceeded",
+      "moves": 138
+    },
+    {
+      "game_number": 2,
+      "error": "maximum recursion depth exceeded",
+      "moves": 0
+    },
+    {
+      "game_number": 3,
+      "error": "maximum recursion depth exceeded",
+      "moves": 0
+    },
+    {
+      "game_number": 4,
+      "error": "maximum recursion depth exceeded",
+      "moves": 0
+    },
+    {
+      "game_number": 5,
+      "error": "maximum recursion depth exceeded",
+      "moves": 0
+    },
+    {
+      "game_number": 6,
+      "error": "maximum recursion depth exceeded",
+      "moves": 0
+    },
+    {
+      "game_number": 7,
+      "error": "maximum recursion depth exceeded",
+      "moves": 0
+    },
+    {
+      "game_number": 8,
+      "error": "maximum recursion depth exceeded",
+      "moves": 0
+    },
+    {
+      "game_number": 9,
+      "error": "maximum recursion depth exceeded",
+      "moves": 0
+    },
+    {
+      "game_number": 10,
+      "error": "maximum recursion depth exceeded",
+      "moves": 0
+    }
+  ],
+  "starting_stats": {
+    "games_played": 0,
+    "moves_made": 0,
+    "wins": 0,
+    "losses": 0,
+    "last_save_time": 0
+  },
+  "end_time": "2025-04-12T02:23:58.358140",
+  "final_stats": {
+    "games_played": 0,
+    "moves_made": 138,
+    "wins": 0,
+    "losses": 0,
+    "last_save_time": 1744421038.00206
+  },
+  "summary": {
+    "total_games_completed": 10,
+    "total_moves": 138,
+    "ai_win_percentage": 0.0
+  }
+}

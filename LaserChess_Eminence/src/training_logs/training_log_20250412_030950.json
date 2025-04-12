@@ -1,0 +1,1578 @@
+{
+  "start_time": "2025-04-12T02:56:39.803188",
+  "num_games": 5,
+  "base_time_limit": 3.0,
+  "games": [
+    {
+      "game_number": 1,
+      "moves": 51,
+      "winner": 1,
+      "duration_seconds": 152.56656789779663,
+      "time_limit_used": 3.0,
+      "events": [
+        {
+          "move_number": 1,
+          "player": 1,
+          "action": "Move (4, 7) to (4, 6)",
+          "thinking_time": 3.035679817199707
+        },
+        {
+          "move_number": 2,
+          "player": 2,
+          "action": "Move (2, 3) to (1, 4)",
+          "thinking_time": 3.0273444652557373
+        },
+        {
+          "move_number": 3,
+          "player": 1,
+          "action": "Move (0, 7) to (1, 7)",
+          "thinking_time": 3.0311708450317383
+        },
+        {
+          "move_number": 4,
+          "player": 2,
+          "action": "Move (4, 2) to (3, 3)",
+          "thinking_time": 3.035848617553711
+        },
+        {
+          "move_number": 5,
+          "player": 1,
+          "action": "Move (3, 5) to (3, 6)",
+          "thinking_time": 3.015045642852783
+        },
+        {
+          "move_number": 6,
+          "player": 2,
+          "action": "Move (6, 7) to (6, 6)",
+          "thinking_time": 3.035916805267334
+        },
+        {
+          "move_number": 7,
+          "player": 1,
+          "action": "Rotate CCW (5, 6)",
+          "thinking_time": 3.0156607627868652
+        },
+        {
+          "move_number": 8,
+          "player": 2,
+          "action": "Rotate CW (1, 4)",
+          "thinking_time": 3.019483804702759
+        },
+        {
+          "move_number": 9,
+          "player": 1,
+          "action": "Move (4, 6) to (5, 5)",
+          "thinking_time": 3.0170814990997314
+        },
+        {
+          "move_number": 10,
+          "player": 2,
+          "action": "Rotate CCW (4, 5)",
+          "thinking_time": 3.03324294090271
+        },
+        {
+          "move_number": 11,
+          "player": 1,
+          "action": "Move (5, 6) to (6, 7)",
+          "thinking_time": 3.0399351119995117
+        },
+        {
+          "move_number": 12,
+          "player": 2,
+          "action": "Move (7, 3) to (6, 3)",
+          "thinking_time": 3.035952568054199
+        },
+        {
+          "move_number": 13,
+          "player": 1,
+          "action": "Move (4, 0) to (4, 1)",
+          "thinking_time": 3.0264127254486084
+        },
+        {
+          "move_number": 14,
+          "player": 2,
+          "action": "Rotate CW (3, 2)",
+          "thinking_time": 3.0216307640075684
+        },
+        {
+          "move_number": 15,
+          "player": 1,
+          "action": "Move (1, 7) to (0, 7)",
+          "thinking_time": 3.0389623641967773
+        },
+        {
+          "move_number": 16,
+          "player": 2,
+          "action": "Move (7, 5) to (6, 5)",
+          "thinking_time": 3.0181543827056885
+        },
+        {
+          "move_number": 17,
+          "player": 1,
+          "action": "Move (6, 7) to (5, 7)",
+          "thinking_time": 3.026252508163452
+        },
+        {
+          "move_number": 18,
+          "player": 2,
+          "action": "Move (3, 2) to (2, 3)",
+          "thinking_time": 3.014279842376709
+        },
+        {
+          "move_number": 19,
+          "player": 1,
+          "action": "Rotate CW (3, 4)",
+          "thinking_time": 3.031033754348755
+        },
+        {
+          "move_number": 20,
+          "player": 2,
+          "action": "Move (7, 2) to (7, 1)",
+          "thinking_time": 3.028088092803955
+        },
+        {
+          "move_number": 21,
+          "player": 1,
+          "action": "Move (1, 2) to (2, 2)",
+          "thinking_time": 3.0230863094329834
+        },
+        {
+          "move_number": 22,
+          "player": 2,
+          "action": "Move (7, 1) to (7, 2)",
+          "thinking_time": 3.01967716217041
+        },
+        {
+          "move_number": 23,
+          "player": 1,
+          "action": "Move (3, 6) to (4, 7)",
+          "thinking_time": 3.0159482955932617
+        },
+        {
+          "move_number": 24,
+          "player": 2,
+          "action": "Move (7, 2) to (7, 1)",
+          "thinking_time": 3.015580177307129
+        },
+        {
+          "move_number": 25,
+          "player": 1,
+          "action": "Move (0, 7) to (0, 8)",
+          "thinking_time": 3.039501428604126
+        },
+        {
+          "move_number": 26,
+          "player": 2,
+          "action": "Move (6, 3) to (5, 3)",
+          "thinking_time": 3.0123605728149414
+        },
+        {
+          "move_number": 27,
+          "player": 1,
+          "action": "Move (0, 5) to (1, 6)",
+          "thinking_time": 3.02634859085083
+        },
+        {
+          "move_number": 28,
+          "player": 2,
+          "action": "Move (4, 5) to (5, 6)",
+          "thinking_time": 3.0355820655822754
+        },
+        {
+          "move_number": 29,
+          "player": 1,
+          "action": "Rotate CCW (4, 1)",
+          "thinking_time": 3.0267436504364014
+        },
+        {
+          "move_number": 30,
+          "player": 2,
+          "action": "Move (6, 6) to (6, 7)",
+          "thinking_time": 3.0187230110168457
+        },
+        {
+          "move_number": 31,
+          "player": 1,
+          "action": "Move (1, 6) to (0, 5)",
+          "thinking_time": 3.033700466156006
+        },
+        {
+          "move_number": 32,
+          "player": 2,
+          "action": "Move (6, 7) to (6, 8)",
+          "thinking_time": 3.0162391662597656
+        },
+        {
+          "move_number": 33,
+          "player": 1,
+          "action": "Move (3, 4) to (4, 3)",
+          "thinking_time": 2.8406388759613037
+        },
+        {
+          "move_number": 34,
+          "player": 2,
+          "action": "Move (5, 6) to (4, 5)",
+          "thinking_time": 3.023324489593506
+        },
+        {
+          "move_number": 35,
+          "player": 1,
+          "action": "Move (0, 5) to (1, 6)",
+          "thinking_time": 3.026681900024414
+        },
+        {
+          "move_number": 36,
+          "player": 2,
+          "action": "Rotate CW (4, 4)",
+          "thinking_time": 3.0147547721862793
+        },
+        {
+          "move_number": 37,
+          "player": 1,
+          "action": "Move (3, 7) to (2, 8)",
+          "thinking_time": 3.0263562202453613
+        },
+        {
+          "move_number": 38,
+          "player": 2,
+          "action": "Move (5, 3) to (5, 2)",
+          "thinking_time": 3.02823543548584
+        },
+        {
+          "move_number": 39,
+          "player": 1,
+          "action": "Move (0, 4) to (0, 5)",
+          "thinking_time": 3.037277936935425
+        },
+        {
+          "move_number": 40,
+          "player": 2,
+          "action": "Move (3, 3) to (2, 4)",
+          "thinking_time": 3.0305662155151367
+        },
+        {
+          "move_number": 41,
+          "player": 1,
+          "action": "Move (4, 7) to (3, 6)",
+          "thinking_time": 3.0297420024871826
+        },
+        {
+          "move_number": 42,
+          "player": 2,
+          "action": "Move (6, 8) to (7, 7)",
+          "thinking_time": 3.023094892501831
+        },
+        {
+          "move_number": 43,
+          "player": 1,
+          "action": "Move (0, 6) to (0, 7)",
+          "thinking_time": 3.021824836730957
+        },
+        {
+          "move_number": 44,
+          "player": 2,
+          "action": "Move (7, 4) to (6, 3)",
+          "thinking_time": 3.011178970336914
+        },
+        {
+          "move_number": 45,
+          "player": 1,
+          "action": "Move (5, 7) to (4, 8)",
+          "thinking_time": 3.0205674171447754
+        },
+        {
+          "move_number": 46,
+          "player": 2,
+          "action": "Move (5, 2) to (4, 2)",
+          "thinking_time": 3.0117101669311523
+        },
+        {
+          "move_number": 47,
+          "player": 1,
+          "action": "Move (4, 8) to (4, 7)",
+          "thinking_time": 3.0200631618499756
+        },
+        {
+          "move_number": 48,
+          "player": 2,
+          "action": "Move (7, 7) to (7, 6)",
+          "thinking_time": 3.031534194946289
+        },
+        {
+          "move_number": 49,
+          "player": 1,
+          "action": "Move (4, 7) to (3, 7)",
+          "thinking_time": 3.0210165977478027
+        },
+        {
+          "move_number": 50,
+          "player": 2,
+          "action": "Move (4, 5) to (3, 4)",
+          "thinking_time": 3.8131513595581055
+        },
+        {
+          "move_number": 51,
+          "player": 1,
+          "action": "Move (4, 1) to (5, 0)",
+          "thinking_time": 0.6971762180328369
+        }
+      ]
+    },
+    {
+      "game_number": 2,
+      "moves": 12,
+      "winner": 2,
+      "duration_seconds": 36.325400829315186,
+      "time_limit_used": 3.5999999999999996,
+      "events": [
+        {
+          "move_number": 1,
+          "player": 1,
+          "action": "Move (1, 2) to (1, 3)",
+          "thinking_time": 3.6451973915100098
+        },
+        {
+          "move_number": 2,
+          "player": 2,
+          "action": "Move (4, 2) to (4, 1)",
+          "thinking_time": 3.6348705291748047
+        },
+        {
+          "move_number": 3,
+          "player": 1,
+          "action": "Move (5, 6) to (5, 7)",
+          "thinking_time": 3.618166208267212
+        },
+        {
+          "move_number": 4,
+          "player": 2,
+          "action": "Rotate CCW (3, 9)",
+          "thinking_time": 3.6164748668670654
+        },
+        {
+          "move_number": 5,
+          "player": 1,
+          "action": "Move (5, 7) to (6, 8)",
+          "thinking_time": 3.6370534896850586
+        },
+        {
+          "move_number": 6,
+          "player": 2,
+          "action": "Rotate CW (3, 2)",
+          "thinking_time": 3.6148481369018555
+        },
+        {
+          "move_number": 7,
+          "player": 1,
+          "action": "Rotate CCW (3, 5)",
+          "thinking_time": 3.618651866912842
+        },
+        {
+          "move_number": 8,
+          "player": 2,
+          "action": "Move (7, 2) to (6, 1)",
+          "thinking_time": 3.6261637210845947
+        },
+        {
+          "move_number": 9,
+          "player": 1,
+          "action": "Rotate CW (3, 7)",
+          "thinking_time": 3.635378360748291
+        },
+        {
+          "move_number": 10,
+          "player": 2,
+          "action": "Rotate CCW (6, 7)",
+          "thinking_time": 1.3715965747833252
+        },
+        {
+          "move_number": 11,
+          "player": 1,
+          "action": "Move (1, 3) to (1, 2)",
+          "thinking_time": 1.409045696258545
+        },
+        {
+          "move_number": 12,
+          "player": 2,
+          "action": "Move (4, 4) to (5, 5)",
+          "thinking_time": 0.893951416015625
+        }
+      ]
+    },
+    {
+      "game_number": 3,
+      "moves": 150,
+      "winner": 0,
+      "duration_seconds": 461.63161849975586,
+      "time_limit_used": 3.0,
+      "events": [
+        {
+          "move_number": 1,
+          "player": 1,
+          "action": "Move (4, 7) to (4, 8)",
+          "thinking_time": 3.0466833114624023
+        },
+        {
+          "move_number": 2,
+          "player": 2,
+          "action": "Move (2, 3) to (2, 4)",
+          "thinking_time": 3.0325732231140137
+        },
+        {
+          "move_number": 3,
+          "player": 1,
+          "action": "Move (3, 0) to (2, 0)",
+          "thinking_time": 3.0342540740966797
+        },
+        {
+          "move_number": 4,
+          "player": 2,
+          "action": "Rotate CCW (3, 2)",
+          "thinking_time": 3.027611494064331
+        },
+        {
+          "move_number": 5,
+          "player": 1,
+          "action": "Move (0, 4) to (1, 3)",
+          "thinking_time": 3.037224531173706
+        },
+        {
+          "move_number": 6,
+          "player": 2,
+          "action": "Rotate CW (7, 2)",
+          "thinking_time": 3.0269391536712646
+        },
+        {
+          "move_number": 7,
+          "player": 1,
+          "action": "Move (3, 7) to (3, 6)",
+          "thinking_time": 3.0240681171417236
+        },
+        {
+          "move_number": 8,
+          "player": 2,
+          "action": "Rotate CW (6, 7)",
+          "thinking_time": 3.026296854019165
+        },
+        {
+          "move_number": 9,
+          "player": 1,
+          "action": "Move (4, 8) to (5, 7)",
+          "thinking_time": 3.034290075302124
+        },
+        {
+          "move_number": 10,
+          "player": 2,
+          "action": "Move (3, 2) to (3, 1)",
+          "thinking_time": 3.022141695022583
+        },
+        {
+          "move_number": 11,
+          "player": 1,
+          "action": "Move (0, 6) to (1, 5)",
+          "thinking_time": 3.0336971282958984
+        },
+        {
+          "move_number": 12,
+          "player": 2,
+          "action": "Move (7, 2) to (6, 2)",
+          "thinking_time": 3.024155855178833
+        },
+        {
+          "move_number": 13,
+          "player": 1,
+          "action": "Move (4, 0) to (5, 0)",
+          "thinking_time": 3.0229861736297607
+        },
+        {
+          "move_number": 14,
+          "player": 2,
+          "action": "Move (6, 7) to (7, 8)",
+          "thinking_time": 3.0176854133605957
+        },
+        {
+          "move_number": 15,
+          "player": 1,
+          "action": "Rotate CW (5, 6)",
+          "thinking_time": 3.015214204788208
+        },
+        {
+          "move_number": 16,
+          "player": 2,
+          "action": "Move (7, 3) to (6, 4)",
+          "thinking_time": 3.0303585529327393
+        },
+        {
+          "move_number": 17,
+          "player": 1,
+          "action": "Move (1, 5) to (1, 4)",
+          "thinking_time": 3.0230553150177
+        },
+        {
+          "move_number": 18,
+          "player": 2,
+          "action": "Move (6, 2) to (5, 3)",
+          "thinking_time": 3.02575421333313
+        },
+        {
+          "move_number": 19,
+          "player": 1,
+          "action": "Move (0, 5) to (0, 6)",
+          "thinking_time": 3.0302722454071045
+        },
+        {
+          "move_number": 20,
+          "player": 2,
+          "action": "Move (7, 4) to (6, 5)",
+          "thinking_time": 3.0325357913970947
+        },
+        {
+          "move_number": 21,
+          "player": 1,
+          "action": "Rotate CCW (5, 7)",
+          "thinking_time": 3.0166945457458496
+        },
+        {
+          "move_number": 22,
+          "player": 2,
+          "action": "Move (5, 3) to (6, 3)",
+          "thinking_time": 3.0236830711364746
+        },
+        {
+          "move_number": 23,
+          "player": 1,
+          "action": "Rotate CW (5, 6)",
+          "thinking_time": 3.015233039855957
+        },
+        {
+          "move_number": 24,
+          "player": 2,
+          "action": "Move (4, 5) to (5, 5)",
+          "thinking_time": 3.0161776542663574
+        },
+        {
+          "move_number": 25,
+          "player": 1,
+          "action": "Move (1, 3) to (0, 3)",
+          "thinking_time": 3.0372567176818848
+        },
+        {
+          "move_number": 26,
+          "player": 2,
+          "action": "Rotate CW (2, 4)",
+          "thinking_time": 3.015246868133545
+        },
+        {
+          "move_number": 27,
+          "player": 1,
+          "action": "Move (0, 6) to (0, 5)",
+          "thinking_time": 3.0192017555236816
+        },
+        {
+          "move_number": 28,
+          "player": 2,
+          "action": "Move (6, 3) to (7, 3)",
+          "thinking_time": 3.024819850921631
+        },
+        {
+          "move_number": 29,
+          "player": 1,
+          "action": "Rotate CW (0, 0)",
+          "thinking_time": 3.0172696113586426
+        },
+        {
+          "move_number": 30,
+          "player": 2,
+          "action": "Move (5, 5) to (6, 6)",
+          "thinking_time": 3.027801036834717
+        },
+        {
+          "move_number": 31,
+          "player": 1,
+          "action": "Move (5, 6) to (4, 5)",
+          "thinking_time": 3.0346968173980713
+        },
+        {
+          "move_number": 32,
+          "player": 2,
+          "action": "Rotate CW (4, 4)",
+          "thinking_time": 3.013700008392334
+        },
+        {
+          "move_number": 33,
+          "player": 1,
+          "action": "Move (3, 5) to (4, 6)",
+          "thinking_time": 3.031280279159546
+        },
+        {
+          "move_number": 34,
+          "player": 2,
+          "action": "Move (4, 2) to (3, 2)",
+          "thinking_time": 3.0234107971191406
+        },
+        {
+          "move_number": 35,
+          "player": 1,
+          "action": "Move (0, 3) to (0, 4)",
+          "thinking_time": 3.030705690383911
+        },
+        {
+          "move_number": 36,
+          "player": 2,
+          "action": "Rotate CCW (7, 9)",
+          "thinking_time": 3.0168755054473877
+        },
+        {
+          "move_number": 37,
+          "player": 1,
+          "action": "Move (3, 6) to (2, 7)",
+          "thinking_time": 4.684749364852905
+        },
+        {
+          "move_number": 38,
+          "player": 2,
+          "action": "Move (7, 3) to (7, 4)",
+          "thinking_time": 3.0273308753967285
+        },
+        {
+          "move_number": 39,
+          "player": 1,
+          "action": "Move (2, 0) to (1, 0)",
+          "thinking_time": 3.032923698425293
+        },
+        {
+          "move_number": 40,
+          "player": 2,
+          "action": "Rotate CW (3, 1)",
+          "thinking_time": 3.0178492069244385
+        },
+        {
+          "move_number": 41,
+          "player": 1,
+          "action": "Move (1, 2) to (2, 2)",
+          "thinking_time": 3.0141379833221436
+        },
+        {
+          "move_number": 42,
+          "player": 2,
+          "action": "Rotate CCW (4, 4)",
+          "thinking_time": 3.026484727859497
+        },
+        {
+          "move_number": 43,
+          "player": 1,
+          "action": "Move (4, 5) to (3, 6)",
+          "thinking_time": 3.0220940113067627
+        },
+        {
+          "move_number": 44,
+          "player": 2,
+          "action": "Move (3, 2) to (2, 3)",
+          "thinking_time": 3.0232884883880615
+        },
+        {
+          "move_number": 45,
+          "player": 1,
+          "action": "Move (0, 4) to (1, 5)",
+          "thinking_time": 3.0150504112243652
+        },
+        {
+          "move_number": 46,
+          "player": 2,
+          "action": "Move (4, 4) to (4, 5)",
+          "thinking_time": 3.0159592628479004
+        },
+        {
+          "move_number": 47,
+          "player": 1,
+          "action": "Move (2, 7) to (3, 8)",
+          "thinking_time": 3.0192394256591797
+        },
+        {
+          "move_number": 48,
+          "player": 2,
+          "action": "Rotate CW (3, 1)",
+          "thinking_time": 3.0149013996124268
+        },
+        {
+          "move_number": 49,
+          "player": 1,
+          "action": "Move (3, 8) to (3, 7)",
+          "thinking_time": 3.0211856365203857
+        },
+        {
+          "move_number": 50,
+          "player": 2,
+          "action": "Rotate CCW (7, 9)",
+          "thinking_time": 3.029694080352783
+        },
+        {
+          "move_number": 51,
+          "player": 1,
+          "action": "Move (0, 7) to (0, 8)",
+          "thinking_time": 3.016751289367676
+        },
+        {
+          "move_number": 52,
+          "player": 2,
+          "action": "Move (6, 6) to (7, 7)",
+          "thinking_time": 3.0171620845794678
+        },
+        {
+          "move_number": 53,
+          "player": 1,
+          "action": "Move (4, 6) to (4, 7)",
+          "thinking_time": 3.0306835174560547
+        },
+        {
+          "move_number": 54,
+          "player": 2,
+          "action": "Rotate CCW (2, 3)",
+          "thinking_time": 3.027400016784668
+        },
+        {
+          "move_number": 55,
+          "player": 1,
+          "action": "Move (3, 4) to (2, 5)",
+          "thinking_time": 3.013472557067871
+        },
+        {
+          "move_number": 56,
+          "player": 2,
+          "action": "Move (3, 1) to (4, 2)",
+          "thinking_time": 3.031693458557129
+        },
+        {
+          "move_number": 57,
+          "player": 1,
+          "action": "Move (5, 7) to (5, 6)",
+          "thinking_time": 3.0234978199005127
+        },
+        {
+          "move_number": 58,
+          "player": 2,
+          "action": "Rotate CW (4, 2)",
+          "thinking_time": 3.0351431369781494
+        },
+        {
+          "move_number": 59,
+          "player": 1,
+          "action": "Move (5, 0) to (5, 1)",
+          "thinking_time": 3.024097204208374
+        },
+        {
+          "move_number": 60,
+          "player": 2,
+          "action": "Rotate CW (2, 3)",
+          "thinking_time": 3.032679796218872
+        },
+        {
+          "move_number": 61,
+          "player": 1,
+          "action": "Rotate CCW (0, 8)",
+          "thinking_time": 3.0257632732391357
+        },
+        {
+          "move_number": 62,
+          "player": 2,
+          "action": "Move (4, 2) to (5, 3)",
+          "thinking_time": 3.0266804695129395
+        },
+        {
+          "move_number": 63,
+          "player": 1,
+          "action": "Rotate CCW (3, 7)",
+          "thinking_time": 3.029776096343994
+        },
+        {
+          "move_number": 64,
+          "player": 2,
+          "action": "Move (4, 5) to (5, 4)",
+          "thinking_time": 3.0117995738983154
+        },
+        {
+          "move_number": 65,
+          "player": 1,
+          "action": "Rotate CW (5, 1)",
+          "thinking_time": 3.0126771926879883
+        },
+        {
+          "move_number": 66,
+          "player": 2,
+          "action": "Move (7, 8) to (6, 8)",
+          "thinking_time": 3.020656108856201
+        },
+        {
+          "move_number": 67,
+          "player": 1,
+          "action": "Move (5, 1) to (6, 0)",
+          "thinking_time": 3.0224733352661133
+        },
+        {
+          "move_number": 68,
+          "player": 2,
+          "action": "Move (7, 4) to (6, 3)",
+          "thinking_time": 3.015103340148926
+        },
+        {
+          "move_number": 69,
+          "player": 1,
+          "action": "Move (1, 4) to (1, 3)",
+          "thinking_time": 3.032564163208008
+        },
+        {
+          "move_number": 70,
+          "player": 2,
+          "action": "Move (2, 3) to (3, 4)",
+          "thinking_time": 3.0122299194335938
+        },
+        {
+          "move_number": 71,
+          "player": 1,
+          "action": "Move (3, 7) to (4, 6)",
+          "thinking_time": 3.0259792804718018
+        },
+        {
+          "move_number": 72,
+          "player": 2,
+          "action": "Move (7, 5) to (7, 4)",
+          "thinking_time": 3.030704975128174
+        },
+        {
+          "move_number": 73,
+          "player": 1,
+          "action": "Rotate CW (2, 2)",
+          "thinking_time": 3.0123417377471924
+        },
+        {
+          "move_number": 74,
+          "player": 2,
+          "action": "Rotate CCW (6, 3)",
+          "thinking_time": 3.024683713912964
+        },
+        {
+          "move_number": 75,
+          "player": 1,
+          "action": "Move (4, 6) to (3, 7)",
+          "thinking_time": 3.0259411334991455
+        },
+        {
+          "move_number": 76,
+          "player": 2,
+          "action": "Rotate CW (6, 3)",
+          "thinking_time": 3.0128366947174072
+        },
+        {
+          "move_number": 77,
+          "player": 1,
+          "action": "Move (1, 3) to (0, 4)",
+          "thinking_time": 3.014435291290283
+        },
+        {
+          "move_number": 78,
+          "player": 2,
+          "action": "Rotate CCW (6, 3)",
+          "thinking_time": 3.0156610012054443
+        },
+        {
+          "move_number": 79,
+          "player": 1,
+          "action": "Move (3, 7) to (2, 7)",
+          "thinking_time": 3.0199010372161865
+        },
+        {
+          "move_number": 80,
+          "player": 2,
+          "action": "Move (5, 4) to (4, 5)",
+          "thinking_time": 3.033033847808838
+        },
+        {
+          "move_number": 81,
+          "player": 1,
+          "action": "Move (0, 8) to (1, 8)",
+          "thinking_time": 3.0194220542907715
+        },
+        {
+          "move_number": 82,
+          "player": 2,
+          "action": "Move (6, 5) to (5, 4)",
+          "thinking_time": 3.027092695236206
+        },
+        {
+          "move_number": 83,
+          "player": 1,
+          "action": "Move (6, 0) to (7, 0)",
+          "thinking_time": 3.0200536251068115
+        },
+        {
+          "move_number": 84,
+          "player": 2,
+          "action": "Rotate CCW (6, 3)",
+          "thinking_time": 3.0251543521881104
+        },
+        {
+          "move_number": 85,
+          "player": 1,
+          "action": "Move (3, 6) to (3, 7)",
+          "thinking_time": 3.0381152629852295
+        },
+        {
+          "move_number": 86,
+          "player": 2,
+          "action": "Move (7, 4) to (6, 5)",
+          "thinking_time": 3.0185370445251465
+        },
+        {
+          "move_number": 87,
+          "player": 1,
+          "action": "Move (2, 7) to (2, 8)",
+          "thinking_time": 5.558137893676758
+        },
+        {
+          "move_number": 88,
+          "player": 2,
+          "action": "Rotate CW (3, 4)",
+          "thinking_time": 3.0122241973876953
+        },
+        {
+          "move_number": 89,
+          "player": 1,
+          "action": "Move (4, 7) to (5, 8)",
+          "thinking_time": 3.024247884750366
+        },
+        {
+          "move_number": 90,
+          "player": 2,
+          "action": "Move (3, 4) to (3, 3)",
+          "thinking_time": 3.017732620239258
+        },
+        {
+          "move_number": 91,
+          "player": 1,
+          "action": "Move (2, 5) to (3, 6)",
+          "thinking_time": 3.0270237922668457
+        },
+        {
+          "move_number": 92,
+          "player": 2,
+          "action": "Move (6, 8) to (6, 9)",
+          "thinking_time": 3.018810510635376
+        },
+        {
+          "move_number": 93,
+          "player": 1,
+          "action": "Move (1, 5) to (1, 4)",
+          "thinking_time": 3.0197346210479736
+        },
+        {
+          "move_number": 94,
+          "player": 2,
+          "action": "Rotate CW (6, 3)",
+          "thinking_time": 3.011704683303833
+        },
+        {
+          "move_number": 95,
+          "player": 1,
+          "action": "Move (1, 0) to (0, 1)",
+          "thinking_time": 3.0327348709106445
+        },
+        {
+          "move_number": 96,
+          "player": 2,
+          "action": "Move (3, 3) to (4, 3)",
+          "thinking_time": 3.0105652809143066
+        },
+        {
+          "move_number": 97,
+          "player": 1,
+          "action": "Rotate CW (1, 8)",
+          "thinking_time": 3.035216808319092
+        },
+        {
+          "move_number": 98,
+          "player": 2,
+          "action": "Move (6, 3) to (6, 2)",
+          "thinking_time": 3.0275042057037354
+        },
+        {
+          "move_number": 99,
+          "player": 1,
+          "action": "Move (2, 8) to (1, 9)",
+          "thinking_time": 3.022942304611206
+        },
+        {
+          "move_number": 100,
+          "player": 2,
+          "action": "Move (6, 4) to (6, 3)",
+          "thinking_time": 3.013806104660034
+        },
+        {
+          "move_number": 101,
+          "player": 1,
+          "action": "Rotate CW (5, 8)",
+          "thinking_time": 3.0218746662139893
+        },
+        {
+          "move_number": 102,
+          "player": 2,
+          "action": "Move (4, 5) to (4, 4)",
+          "thinking_time": 3.0106770992279053
+        },
+        {
+          "move_number": 103,
+          "player": 1,
+          "action": "Move (3, 6) to (2, 7)",
+          "thinking_time": 3.020232677459717
+        },
+        {
+          "move_number": 104,
+          "player": 2,
+          "action": "Move (5, 4) to (5, 5)",
+          "thinking_time": 3.0283384323120117
+        },
+        {
+          "move_number": 105,
+          "player": 1,
+          "action": "Move (0, 5) to (1, 5)",
+          "thinking_time": 3.0169296264648438
+        },
+        {
+          "move_number": 106,
+          "player": 2,
+          "action": "Move (4, 3) to (3, 4)",
+          "thinking_time": 3.0316965579986572
+        },
+        {
+          "move_number": 107,
+          "player": 1,
+          "action": "Move (2, 2) to (2, 1)",
+          "thinking_time": 3.022794723510742
+        },
+        {
+          "move_number": 108,
+          "player": 2,
+          "action": "Move (5, 3) to (6, 4)",
+          "thinking_time": 3.014998197555542
+        },
+        {
+          "move_number": 109,
+          "player": 1,
+          "action": "Move (7, 0) to (6, 1)",
+          "thinking_time": 3.0335545539855957
+        },
+        {
+          "move_number": 110,
+          "player": 2,
+          "action": "Move (4, 4) to (4, 3)",
+          "thinking_time": 3.0209906101226807
+        },
+        {
+          "move_number": 111,
+          "player": 1,
+          "action": "Move (2, 7) to (3, 8)",
+          "thinking_time": 3.013007640838623
+        },
+        {
+          "move_number": 112,
+          "player": 2,
+          "action": "Move (3, 4) to (4, 4)",
+          "thinking_time": 3.017526149749756
+        },
+        {
+          "move_number": 113,
+          "player": 1,
+          "action": "Move (5, 8) to (5, 7)",
+          "thinking_time": 3.038835287094116
+        },
+        {
+          "move_number": 114,
+          "player": 2,
+          "action": "Move (6, 9) to (7, 8)",
+          "thinking_time": 3.0385594367980957
+        },
+        {
+          "move_number": 115,
+          "player": 1,
+          "action": "Move (0, 4) to (1, 3)",
+          "thinking_time": 3.0272860527038574
+        },
+        {
+          "move_number": 116,
+          "player": 2,
+          "action": "Move (5, 5) to (5, 4)",
+          "thinking_time": 3.0185840129852295
+        },
+        {
+          "move_number": 117,
+          "player": 1,
+          "action": "Move (1, 3) to (0, 3)",
+          "thinking_time": 3.036458969116211
+        },
+        {
+          "move_number": 118,
+          "player": 2,
+          "action": "Move (6, 5) to (7, 6)",
+          "thinking_time": 3.033360242843628
+        },
+        {
+          "move_number": 119,
+          "player": 1,
+          "action": "Move (1, 4) to (2, 3)",
+          "thinking_time": 3.014188289642334
+        },
+        {
+          "move_number": 120,
+          "player": 2,
+          "action": "Move (4, 3) to (3, 4)",
+          "thinking_time": 3.022688865661621
+        },
+        {
+          "move_number": 121,
+          "player": 1,
+          "action": "Move (0, 3) to (1, 2)",
+          "thinking_time": 3.024118423461914
+        },
+        {
+          "move_number": 122,
+          "player": 2,
+          "action": "Move (7, 6) to (6, 5)",
+          "thinking_time": 3.0265018939971924
+        },
+        {
+          "move_number": 123,
+          "player": 1,
+          "action": "Move (1, 2) to (1, 1)",
+          "thinking_time": 3.0348920822143555
+        },
+        {
+          "move_number": 124,
+          "player": 2,
+          "action": "Rotate CCW (7, 8)",
+          "thinking_time": 3.017435073852539
+        },
+        {
+          "move_number": 125,
+          "player": 1,
+          "action": "Move (0, 1) to (1, 2)",
+          "thinking_time": 3.0164122581481934
+        },
+        {
+          "move_number": 126,
+          "player": 2,
+          "action": "Move (5, 4) to (4, 3)",
+          "thinking_time": 3.031970262527466
+        },
+        {
+          "move_number": 127,
+          "player": 1,
+          "action": "Rotate CCW (2, 1)",
+          "thinking_time": 3.0348336696624756
+        },
+        {
+          "move_number": 128,
+          "player": 2,
+          "action": "Move (4, 3) to (3, 3)",
+          "thinking_time": 3.019096851348877
+        },
+        {
+          "move_number": 129,
+          "player": 1,
+          "action": "Rotate CCW (5, 7)",
+          "thinking_time": 3.0286812782287598
+        },
+        {
+          "move_number": 130,
+          "player": 2,
+          "action": "Rotate CW (7, 8)",
+          "thinking_time": 3.0293281078338623
+        },
+        {
+          "move_number": 131,
+          "player": 1,
+          "action": "Move (1, 1) to (0, 1)",
+          "thinking_time": 3.016237258911133
+        },
+        {
+          "move_number": 132,
+          "player": 2,
+          "action": "Move (6, 3) to (5, 3)",
+          "thinking_time": 3.0187063217163086
+        },
+        {
+          "move_number": 133,
+          "player": 1,
+          "action": "Move (1, 9) to (2, 9)",
+          "thinking_time": 3.014843463897705
+        },
+        {
+          "move_number": 134,
+          "player": 2,
+          "action": "Move (5, 3) to (4, 2)",
+          "thinking_time": 3.0161242485046387
+        },
+        {
+          "move_number": 135,
+          "player": 1,
+          "action": "Rotate CW (1, 2)",
+          "thinking_time": 3.0391271114349365
+        },
+        {
+          "move_number": 136,
+          "player": 2,
+          "action": "Rotate CW (7, 9)",
+          "thinking_time": 3.0189924240112305
+        },
+        {
+          "move_number": 137,
+          "player": 1,
+          "action": "Move (5, 7) to (6, 6)",
+          "thinking_time": 6.518061399459839
+        },
+        {
+          "move_number": 138,
+          "player": 2,
+          "action": "Rotate CW (6, 2)",
+          "thinking_time": 3.3297605514526367
+        },
+        {
+          "move_number": 139,
+          "player": 1,
+          "action": "Rotate CCW (6, 1)",
+          "thinking_time": 3.030292510986328
+        },
+        {
+          "move_number": 140,
+          "player": 2,
+          "action": "Move (3, 3) to (2, 2)",
+          "thinking_time": 3.0224521160125732
+        },
+        {
+          "move_number": 141,
+          "player": 1,
+          "action": "Move (2, 9) to (3, 9)",
+          "thinking_time": 3.012510061264038
+        },
+        {
+          "move_number": 142,
+          "player": 2,
+          "action": "Move (3, 4) to (2, 5)",
+          "thinking_time": 3.0369677543640137
+        },
+        {
+          "move_number": 143,
+          "player": 1,
+          "action": "Move (1, 2) to (1, 3)",
+          "thinking_time": 3.0328447818756104
+        },
+        {
+          "move_number": 144,
+          "player": 2,
+          "action": "Move (2, 5) to (1, 4)",
+          "thinking_time": 3.023185968399048
+        },
+        {
+          "move_number": 145,
+          "player": 1,
+          "action": "Move (1, 3) to (0, 4)",
+          "thinking_time": 3.028977870941162
+        },
+        {
+          "move_number": 146,
+          "player": 2,
+          "action": "Move (6, 4) to (5, 3)",
+          "thinking_time": 3.020486354827881
+        },
+        {
+          "move_number": 147,
+          "player": 1,
+          "action": "Rotate CCW (0, 0)",
+          "thinking_time": 3.032876968383789
+        },
+        {
+          "move_number": 148,
+          "player": 2,
+          "action": "Move (7, 7) to (6, 8)",
+          "thinking_time": 3.0286946296691895
+        },
+        {
+          "move_number": 149,
+          "player": 1,
+          "action": "Move (2, 1) to (3, 2)",
+          "thinking_time": 3.040193796157837
+        },
+        {
+          "move_number": 150,
+          "player": 2,
+          "action": "Move (4, 4) to (3, 4)",
+          "thinking_time": 3.0261054039001465
+        }
+      ]
+    },
+    {
+      "game_number": 4,
+      "moves": 3,
+      "winner": 1,
+      "duration_seconds": 6.638669967651367,
+      "time_limit_used": 3.0,
+      "events": [
+        {
+          "move_number": 1,
+          "player": 1,
+          "action": "Move (3, 7) to (4, 6)",
+          "thinking_time": 3.0537357330322266
+        },
+        {
+          "move_number": 2,
+          "player": 2,
+          "action": "Rotate CW (4, 2)",
+          "thinking_time": 3.0363054275512695
+        },
+        {
+          "move_number": 3,
+          "player": 1,
+          "action": "Move (3, 4) to (3, 3)",
+          "thinking_time": 0.5486288070678711
+        }
+      ]
+    },
+    {
+      "game_number": 5,
+      "moves": 35,
+      "winner": 1,
+      "duration_seconds": 125.1380205154419,
+      "time_limit_used": 3.5999999999999996,
+      "events": [
+        {
+          "move_number": 1,
+          "player": 1,
+          "action": "Move (4, 7) to (3, 8)",
+          "thinking_time": 3.6682310104370117
+        },
+        {
+          "move_number": 2,
+          "player": 2,
+          "action": "Rotate CCW (2, 3)",
+          "thinking_time": 3.6246793270111084
+        },
+        {
+          "move_number": 3,
+          "player": 1,
+          "action": "Rotate CCW (0, 7)",
+          "thinking_time": 3.6377415657043457
+        },
+        {
+          "move_number": 4,
+          "player": 2,
+          "action": "Rotate CW (4, 5)",
+          "thinking_time": 3.6183619499206543
+        },
+        {
+          "move_number": 5,
+          "player": 1,
+          "action": "Rotate CW (0, 7)",
+          "thinking_time": 3.620830535888672
+        },
+        {
+          "move_number": 6,
+          "player": 2,
+          "action": "Rotate CW (7, 9)",
+          "thinking_time": 3.612811803817749
+        },
+        {
+          "move_number": 7,
+          "player": 1,
+          "action": "Move (1, 2) to (0, 3)",
+          "thinking_time": 3.6212549209594727
+        },
+        {
+          "move_number": 8,
+          "player": 2,
+          "action": "Move (6, 7) to (5, 7)",
+          "thinking_time": 3.6139862537384033
+        },
+        {
+          "move_number": 9,
+          "player": 1,
+          "action": "Move (0, 5) to (1, 4)",
+          "thinking_time": 3.6297473907470703
+        },
+        {
+          "move_number": 10,
+          "player": 2,
+          "action": "Move (5, 7) to (6, 6)",
+          "thinking_time": 3.6254141330718994
+        },
+        {
+          "move_number": 11,
+          "player": 1,
+          "action": "Rotate CCW (4, 0)",
+          "thinking_time": 3.6311118602752686
+        },
+        {
+          "move_number": 12,
+          "player": 2,
+          "action": "Rotate CW (7, 2)",
+          "thinking_time": 1.9660086631774902
+        },
+        {
+          "move_number": 13,
+          "player": 1,
+          "action": "Move (5, 6) to (4, 6)",
+          "thinking_time": 3.62612247467041
+        },
+        {
+          "move_number": 14,
+          "player": 2,
+          "action": "Move (6, 6) to (5, 5)",
+          "thinking_time": 3.6150598526000977
+        },
+        {
+          "move_number": 15,
+          "player": 1,
+          "action": "Move (0, 7) to (1, 7)",
+          "thinking_time": 3.6225383281707764
+        },
+        {
+          "move_number": 16,
+          "player": 2,
+          "action": "Move (7, 5) to (6, 5)",
+          "thinking_time": 1.8364927768707275
+        },
+        {
+          "move_number": 17,
+          "player": 1,
+          "action": "Move (0, 6) to (0, 5)",
+          "thinking_time": 3.6316046714782715
+        },
+        {
+          "move_number": 18,
+          "player": 2,
+          "action": "Move (5, 5) to (6, 4)",
+          "thinking_time": 3.623504877090454
+        },
+        {
+          "move_number": 19,
+          "player": 1,
+          "action": "Move (3, 8) to (2, 9)",
+          "thinking_time": 3.616670608520508
+        },
+        {
+          "move_number": 20,
+          "player": 2,
+          "action": "Move (4, 4) to (5, 4)",
+          "thinking_time": 3.6280641555786133
+        },
+        {
+          "move_number": 21,
+          "player": 1,
+          "action": "Rotate CCW (2, 9)",
+          "thinking_time": 3.614330530166626
+        },
+        {
+          "move_number": 22,
+          "player": 2,
+          "action": "Rotate CW (3, 2)",
+          "thinking_time": 3.6293303966522217
+        },
+        {
+          "move_number": 23,
+          "player": 1,
+          "action": "Move (3, 4) to (4, 4)",
+          "thinking_time": 3.6375579833984375
+        },
+        {
+          "move_number": 24,
+          "player": 2,
+          "action": "Move (7, 4) to (7, 5)",
+          "thinking_time": 3.610919952392578
+        },
+        {
+          "move_number": 25,
+          "player": 1,
+          "action": "Move (1, 7) to (0, 6)",
+          "thinking_time": 3.6129894256591797
+        },
+        {
+          "move_number": 26,
+          "player": 2,
+          "action": "Move (4, 5) to (5, 5)",
+          "thinking_time": 3.627894639968872
+        },
+        {
+          "move_number": 27,
+          "player": 1,
+          "action": "Move (2, 9) to (3, 8)",
+          "thinking_time": 4.064432859420776
+        },
+        {
+          "move_number": 28,
+          "player": 2,
+          "action": "Rotate CW (6, 4)",
+          "thinking_time": 3.6246328353881836
+        },
+        {
+          "move_number": 29,
+          "player": 1,
+          "action": "Move (0, 6) to (0, 7)",
+          "thinking_time": 3.6215789318084717
+        },
+        {
+          "move_number": 30,
+          "player": 2,
+          "action": "Move (2, 3) to (3, 3)",
+          "thinking_time": 3.6283397674560547
+        },
+        {
+          "move_number": 31,
+          "player": 1,
+          "action": "Move (3, 5) to (3, 4)",
+          "thinking_time": 3.6325175762176514
+        },
+        {
+          "move_number": 32,
+          "player": 2,
+          "action": "Move (6, 5) to (6, 6)",
+          "thinking_time": 3.6316452026367188
+        },
+        {
+          "move_number": 33,
+          "player": 1,
+          "action": "Move (3, 4) to (2, 5)",
+          "thinking_time": 3.6325879096984863
+        },
+        {
+          "move_number": 34,
+          "player": 2,
+          "action": "Move (4, 2) to (5, 3)",
+          "thinking_time": 7.824770212173462
+        },
+        {
+          "move_number": 35,
+          "player": 1,
+          "action": "Move (3, 7) to (4, 8)",
+          "thinking_time": 0.6662640571594238
+        }
+      ]
+    }
+  ],
+  "starting_stats": {
+    "games_played": 0,
+    "moves_made": 0,
+    "wins": 0,
+    "losses": 0,
+    "last_save_time": 0
+  },
+  "end_time": "2025-04-12T03:09:50.648466",
+  "final_stats": {
+    "games_played": 0,
+    "moves_made": 251,
+    "wins": 0,
+    "losses": 0,
+    "last_save_time": 1744423786.3952851
+  },
+  "summary": {
+    "total_games_completed": 5,
+    "total_moves": 251,
+    "ai_win_percentage": 20.0
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "start_time": "2025-04-12T02:24:01.381522",
+  "num_games": 20,
+  "base_time_limit": 2.0,
+  "games": [
+    {
+      "game_number": 1,
+      "error": "maximum recursion depth exceeded",
+      "moves": 0
+    },
+    {
+      "game_number": 2,
+      "error": "maximum recursion depth exceeded",
+      "moves": 0
+    },
+    {
+      "game_number": 3,
+      "error": "maximum recursion depth exceeded",
+      "moves": 0
+    },
+    {
+      "game_number": 4,
+      "error": "maximum recursion depth exceeded",
+      "moves": 0
+    },
+    {
+      "game_number": 5,
+      "error": "maximum recursion depth exceeded",
+      "moves": 0
+    },
+    {
+      "game_number": 6,
+      "error": "maximum recursion depth exceeded",
+      "moves": 0
+    },
+    {
+      "game_number": 7,
+      "error": "maximum recursion depth exceeded",
+      "moves": 0
+    },
+    {
+      "game_number": 8,
+      "error": "maximum recursion depth exceeded",
+      "moves": 0
+    },
+    {
+      "game_number": 9,
+      "error": "maximum recursion depth exceeded",
+      "moves": 0
+    },
+    {
+      "game_number": 10,
+      "error": "maximum recursion depth exceeded",
+      "moves": 0
+    },
+    {
+      "game_number": 11,
+      "error": "maximum recursion depth exceeded",
+      "moves": 0
+    },
+    {
+      "game_number": 12,
+      "error": "maximum recursion depth exceeded",
+      "moves": 0
+    },
+    {
+      "game_number": 13,
+      "error": "maximum recursion depth exceeded",
+      "moves": 0
+    },
+    {
+      "game_number": 14,
+      "error": "maximum recursion depth exceeded",
+      "moves": 0
+    },
+    {
+      "game_number": 15,
+      "error": "maximum recursion depth exceeded",
+      "moves": 0
+    },
+    {
+      "game_number": 16,
+      "error": "maximum recursion depth exceeded",
+      "moves": 0
+    },
+    {
+      "game_number": 17,
+      "error": "maximum recursion depth exceeded",
+      "moves": 0
+    },
+    {
+      "game_number": 18,
+      "error": "maximum recursion depth exceeded",
+      "moves": 0
+    },
+    {
+      "game_number": 19,
+      "error": "maximum recursion depth exceeded",
+      "moves": 0
+    },
+    {
+      "game_number": 20,
+      "error": "maximum recursion depth exceeded",
+      "moves": 0
+    }
+  ],
+  "starting_stats": {
+    "games_played": 0,
+    "moves_made": 138,
+    "wins": 0,
+    "losses": 0,
+    "last_save_time": 1744421041.049264
+  },
+  "end_time": "2025-04-12T02:24:04.408800",
+  "final_stats": {
+    "games_played": 0,
+    "moves_made": 138,
+    "wins": 0,
+    "losses": 0,
+    "last_save_time": 1744421044.0537126
+  },
+  "summary": {
+    "total_games_completed": 20,
+    "total_moves": 0,
+    "ai_win_percentage": 0.0
+  }
+}

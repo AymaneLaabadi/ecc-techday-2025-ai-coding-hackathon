@@ -1,0 +1,153 @@
+{
+  "start_time": "2025-04-12T03:34:56.479127",
+  "num_games": 20,
+  "base_time_limit": 1.5,
+  "parallel_processes": 4,
+  "games": [
+    {
+      "process_id": 2,
+      "game_number": 1,
+      "moves": 100,
+      "winner": 0,
+      "duration_seconds": 156.3231701850891
+    },
+    {
+      "process_id": 2,
+      "game_number": 2,
+      "moves": 100,
+      "winner": 0,
+      "duration_seconds": 156.27082324028015
+    },
+    {
+      "process_id": 2,
+      "game_number": 3,
+      "moves": 100,
+      "winner": 0,
+      "duration_seconds": 156.71122097969055
+    },
+    {
+      "process_id": 2,
+      "game_number": 4,
+      "moves": 100,
+      "winner": 0,
+      "duration_seconds": 154.83019995689392
+    },
+    {
+      "process_id": 2,
+      "game_number": 5,
+      "moves": 100,
+      "winner": 0,
+      "duration_seconds": 157.73164796829224
+    },
+    {
+      "process_id": 1,
+      "game_number": 1,
+      "moves": 100,
+      "winner": 0,
+      "duration_seconds": 154.96697902679443
+    },
+    {
+      "process_id": 1,
+      "game_number": 2,
+      "moves": 100,
+      "winner": 0,
+      "duration_seconds": 156.7413399219513
+    },
+    {
+      "process_id": 1,
+      "game_number": 3,
+      "moves": 100,
+      "winner": 0,
+      "duration_seconds": 156.40852880477905
+    },
+    {
+      "process_id": 1,
+      "game_number": 4,
+      "moves": 100,
+      "winner": 0,
+      "duration_seconds": 157.93999600410461
+    },
+    {
+      "process_id": 1,
+      "game_number": 5,
+      "moves": 100,
+      "winner": 0,
+      "duration_seconds": 158.50522303581238
+    },
+    {
+      "process_id": 0,
+      "game_number": 1,
+      "moves": 100,
+      "winner": 0,
+      "duration_seconds": 155.59520077705383
+    },
+    {
+      "process_id": 0,
+      "game_number": 2,
+      "moves": 100,
+      "winner": 0,
+      "duration_seconds": 156.9407777786255
+    },
+    {
+      "process_id": 0,
+      "game_number": 3,
+      "moves": 100,
+      "winner": 0,
+      "duration_seconds": 156.89127326011658
+    },
+    {
+      "process_id": 0,
+      "game_number": 4,
+      "moves": 100,
+      "winner": 0,
+      "duration_seconds": 158.65609121322632
+    },
+    {
+      "process_id": 0,
+      "game_number": 5,
+      "moves": 100,
+      "winner": 0,
+      "duration_seconds": 158.52418851852417
+    },
+    {
+      "process_id": 3,
+      "game_number": 1,
+      "moves": 100,
+      "winner": 0,
+      "duration_seconds": 159.1690309047699
+    },
+    {
+      "process_id": 3,
+      "game_number": 2,
+      "moves": 100,
+      "winner": 0,
+      "duration_seconds": 157.0068759918213
+    },
+    {
+      "process_id": 3,
+      "game_number": 3,
+      "moves": 100,
+      "winner": 0,
+      "duration_seconds": 156.50646328926086
+    },
+    {
+      "process_id": 3,
+      "game_number": 4,
+      "moves": 100,
+      "winner": 0,
+      "duration_seconds": 157.2309205532074
+    },
+    {
+      "process_id": 3,
+      "game_number": 5,
+      "moves": 100,
+      "winner": 0,
+      "duration_seconds": 158.22558498382568
+    }
+  ],
+  "summary": {
+    "total_games_completed": 20,
+    "total_moves": 2000,
+    "ai_win_percentage": 0.0
+  }
+}
